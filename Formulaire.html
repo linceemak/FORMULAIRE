@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>FORMULAIRE</title>
+        <link rel="stylesheet" href="Formulaire.css">
+    </head>
+    <body>
+    <form method="post" action="monprogrammehtml">
+        <fieldset>
+         <label for="prénom">Prénom</label>
+         <input type="text" name="Prénom" placeholder="entrez un prénom" minlength="2" maxlength="20" id="prénom"/><br>
+         <label for="nom">Nom</label>
+         <input type="text" name="Nom" placeholder="entrez un nom" minlength="2" maxlength="20" id="nom"/><br>
+         <label for="Email">Email</label>
+         <input type="text" name="Email" placeholder="entrez un mail" id="mail"/><br>
+         <label for="Numéro">Numéro</label>
+         <input type="text" name="Numéro" placeholder="entrez un numéro de télephone" id="numéro"/><br>
+         <label for="Mot de passe">Mot de passe</label>
+         <input type="password" name="Mot de passe" placeholder="entrez un mot de passe" minlength="8" maxlength="30" id="numéro"/><br>
+         <label for="Age">Age</label>
+         <input type="text" name="Age" placeholder="entrez votre age" id="age"/><br>
+         <p>Laissez un commentaire</p>
+         <textarea name="laissez un commentaire" placeholder="laissez un commentaire" id="laissez un commentaire" cols="70" rows="10"></textarea><br>
+        </fieldset>
+        <fieldset>
+         <input type="date"/><br>
+         <input type="file" accept=".png, .jpg, .gif"/><br>
+         <input type="checkbox" id="checkbox1" checked><label for="checkbox">case</label><br>
+         <input type="checkbox" id="checkbox2"><label for="checkbox">case</label><br>
+         <input type="checkbox" id="checkbox3"><label for="checkbox">case</label><br>
+         <input type="checkbox" id="checkbox4"><label for="checkbox">case</label><br>
+        </fieldset>
+        <fieldset>
+            <label for="list">Ceci est une liste</label>
+            <select name="liste" id="liste">
+            <optgroup label="gp1">
+                <option value="g1">g1</option>
+                <option value="g2">g2</option>
+            </optgroup>
+            <optgroup label="gp2">
+                <option value="g3">g3</option>
+                <option value="g4">g4</option>
+            </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+        <input type="submit" value="envoyer"/>
+        <input type="reset" value=" réinitialiser">
+        </fieldset>
+    </form>
+    </body>
+</html>
